@@ -17,33 +17,14 @@
 };
 
 #define DEFAULT 0
-#define HRM 1
 #define GAME 1
-#define GAME2 3
-#define ALPHA 4
-#define ALPHA_HRM 5
-#define BETA 6
-#define BETA_HRM 7
-#define CONFIG 8
-#define GAMING_NUM 9
-
-&mt {
-    tapping-term-ms = <200>;
-};
+#define GAME2 2
+#define ALPHA 3
+#define BETA 4
+#define CONFIG 5
+#define GAMING_NUM 6
 
 / {
-
-       behaviors {
-           hm: homerow_mods {
-               compatible = "zmk,behavior-hold-tap";
-               label = "HOMEROW_MODS";
-               #binding-cells = <2>;
-               tapping-term-ms = <150>;
-               quick_tap_ms = <0>;
-               flavor = "tap-preferred";
-               bindings = <&kp>, <&kp>;
-           };
-       };
 
         keymap {
                 compatible = "zmk,keymap";
@@ -52,19 +33,9 @@
                         label = "QWERTY";
                         bindings = <
    &kp TAB   &kp Q       &kp W      &kp E      &kp R        &kp T    &kp Y &kp U        &kp I      &kp O        &kp P          &kp BKSP
-   &kp LCTL  &kp A       &kp S      &kp D      &kp F        &kp G    &kp H &kp J        &kp K      &kp L        &kp SEMI       &hm RCTL QUOT
+   &kp LCTL  &kp A       &kp S      &kp D      &kp F        &kp G    &kp H &kp J        &kp K      &kp L        &kp SEMI       &kp QUOT
    &kp LSHFT &kp Z       &kp X      &kp C      &kp V        &kp B    &kp N &kp M        &kp CMMA   &kp DOT      &kp FSLH       &kp RSFT
                             &kp LGUI &lt ALPHA SPC &lt BETA MINUS    &lt BETA GRAVE &lt ALPHA ENTER &kp LALT
-                        >;
-                };
-
-                hrm_layer {
-                        label = "HRM";
-                        bindings = <
-   &kp TAB   &kp Q       &kp W      &kp E      &kp R        &kp T    &kp Y &kp U        &kp I      &kp O        &kp P          &kp BKSP
-   &kp LCTL  &hm LSHFT A &hm LALT S &hm LGUI D &hm LCTL F   &kp G    &kp H &hm LCTL J   &hm LGUI K &hm LALT L   &hm LSHFT SEMI &hm RCTL QUOT
-   &kp LSHFT &kp Z       &kp X      &kp C      &lt BETA V   &kp B    &kp N &lt BETA M   &kp CMMA   &kp DOT      &kp FSLH       &kp RSFT
-                    &kp LGUI &lt ALPHA_HRM SPC &lt BETA_HRM MINUS    &lt BETA_HRM GRAVE &lt ALPHA_HRM ENTER &kp LALT
                         >;
                 };
 
@@ -92,19 +63,9 @@
                         label = "QWERTY";
                         bindings = <
    &kp ESC   &kp EXCL     &kp AT      &kp PRCNT   &kp CARET   &kp DLLR   &kp PLUS &kp STAR       &kp LBRC      &kp RBRC      &kp PIPE        &kp DEL
-   &kp LCTL  &kp N1       &kp N2      &kp N3      &kp N4      &kp N5     &kp AMPS &kp EQUAL      &kp LBKT      &kp RBKT      &kp MINUS       &hm RCTL UNDER
+   &kp LCTL  &kp N1       &kp N2      &kp N3      &kp N4      &kp N5     &kp AMPS &kp EQUAL      &kp LBKT      &kp RBKT      &kp MINUS       &kp UNDER
    &kp LSHFT &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp HASH &kp BSLH       &kp LPAR      &kp RPAR      &kp GRAVE       &kp TILDE
                                              &trans &kp UNDER &trans     &trans &kp MINUS &trans
-                        >;
-                };
-
-                alpha_hrm_layer {
-                        label = "HRM";
-                        bindings = <
-   &kp ESC   &kp EXCL     &kp AT      &kp PRCNT   &kp CARET   &kp DLLR   &kp PLUS &kp STAR       &kp LBRC      &kp RBRC      &kp PIPE        &kp DEL
-   &kp LCTL  &hm LSHFT N1 &hm LALT N2 &hm LGUI N3 &hm LCTL N4 &kp N5     &kp AMPS &hm LCTL EQUAL &hm LGUI LBKT &hm LALT RBKT &hm LSHFT MINUS &hm RCTL UNDER
-   &kp LSHFT &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp HASH &kp BSLH       &kp LPAR      &kp RPAR      &kp GRAVE       &kp TILDE
-                                                &trans &trans &trans     &trans &trans &trans
                         >;
                 };
 
@@ -112,18 +73,8 @@
                         label = "QWERTY";
                         bindings = <
    &trans      &none   &none &none      &none       &none            &kp PG_UP    &kp PG_DN  &kp UP     &kp HOME   &kp END    &mo CONFIG
-   &trans      &none   &none &none      &none       &none            &kp C_VOL_UP &kp LEFT   &kp DOWN   &kp RIGHT  &none      &trans
-   &trans      &none   &none &none      &none       &none            &kp C_VOL_DN &kp C_PLAY &kp C_MUTE &kp C_PREV &kp C_NEXT &trans
-                                            &trans &trans &trans     &trans &trans &trans
-                        >;
-                };
-
-                beta_hrm_layer {
-                        label = "HRM";
-                        bindings = <
-   &trans      &none   &none &none      &none       &none            &kp PG_UP    &kp PG_DN  &kp UP     &kp HOME   &kp END    &mo CONFIG
-   &trans      &none   &none &none      &none       &none            &kp C_VOL_UP &kp LEFT   &kp DOWN   &kp RIGHT  &none      &trans
-   &trans      &none   &none &none      &none       &none            &kp C_VOL_DN &kp C_PLAY &kp C_MUTE &kp C_PREV &kp C_NEXT &trans
+   &trans      &none   &none &none      &none       &kp C_VOL_UP     &kp C_VOL_UP &kp LEFT   &kp DOWN   &kp RIGHT  &none      &trans
+   &trans      &none   &none &none      &none       &kp C_VOL_DN     &kp C_VOL_DN &kp C_PLAY &kp C_MUTE &kp C_PREV &kp C_NEXT &trans
                                             &trans &trans &trans     &trans &trans &trans
                         >;
                 };
@@ -131,7 +82,7 @@
                 config_layer {
                         label = "CONFIG";
                         bindings = <
-   &reset     &tog HRM     &tog GAME    &tog GAME2   &none        &none           &kp F1   &kp F2  &kp F3 &kp F4 &kp F5  &none
+   &reset     &tog GAME    &tog GAME2    &none       &none        &none           &kp F1   &kp F2  &kp F3 &kp F4 &kp F5  &none
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &kp F6   &kp F7  &kp F8 &kp F9 &kp F10 &none
    &none      &none        &none        &none        &none        &none           &kp F11  &kp F12 &none  &none  &none   &none
                                                            &trans &trans &trans   &trans &trans &trans
