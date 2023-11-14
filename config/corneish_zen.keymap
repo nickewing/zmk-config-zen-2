@@ -16,6 +16,10 @@
   };
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
 #define DEFAULT 0
 #define GAME 1
 #define GAME2 2
@@ -75,9 +79,9 @@
                         label = "QWERTY";
                         bindings = <
    &kp GRAVE &kp EXCL     &kp AT      &kp HASH    &kp DLLR    &kp PRCNT  &kp CARET &kp AMPS  &kp STAR   &kp PIPE   &kp BSLH  &kp MINUS
-   &kp LCTL  &kp N1       &kp N2      &kp N3      &kp N4      &kp N5     &kp EQUAL &kp LBKT  &kp LPAR   &kp LBRC   &kp LT    &kp UNDER
-   &kp LSHFT &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp PLUS  &kp RBKT  &kp RPAR   &kp RBRC   &kp GT    &kp TILDE
-                                             &trans &kp UNDER &trans     &trans &kp MINUS &trans
+   &kp LCTL  &kp N1       &kp N2      &kp N3      &kp N4      &kp N5     &kp EQUAL &kp LPAR  &kp LBRC   &kp LBKT   &kp LT    &kp UNDER
+   &kp LSHFT &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp PLUS  &kp RPAR  &kp RBRC   &kp RBKT   &kp GT    &kp TILDE
+                                             &trans &kp UNDER &trans     &trans &caps_word &trans
                         >;
                 };
 
