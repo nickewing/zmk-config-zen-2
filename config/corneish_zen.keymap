@@ -29,6 +29,15 @@
           //zmk,matrix_transform = &five_column_transform;
        };
 
+        combos {
+            compatible = "zmk,combos";
+
+            toggle_caps_word {
+                bindings = <&caps_word>;
+                key-positions = <24 35>;
+            };
+        };
+
        behaviors {
            ht_tp: holdtap_tappreferred {
              compatible = "zmk,behavior-hold-tap";
