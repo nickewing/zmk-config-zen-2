@@ -18,7 +18,7 @@
 #define GAMING_NUM 6
 
 &lt {
-    tapping-term-ms = <100>;
+    tapping-term-ms = <200>;
 };
 
 / {
@@ -33,7 +33,7 @@
              label = "HOLD_TAP_TAP_PREFERRED";
              #binding-cells = <2>;
              flavor = "tap-preferred";
-             tapping-term-ms = <100>;
+             tapping-term-ms = <200>;
              quick-tap-ms = <0>;
              bindings = <&kp>, <&kp>;
            };
