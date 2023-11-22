@@ -17,7 +17,7 @@
 #define CONFIG 5
 #define GAMING_NUM 6
 
-#define COMBO_TIMEOUT_MS 35
+#define COMBO_TIMEOUT_MS 20
 #define COMBO_REQUIRE_PRIOR_IDLE_MS 150
 
 &lt {
