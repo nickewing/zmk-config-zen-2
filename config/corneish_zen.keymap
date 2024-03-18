@@ -48,7 +48,7 @@
    &kp TAB   &kp Q       &kp W      &kp E      &kp R        &kp T    &kp Y &kp U        &kp I      &kp O        &kp P          &kp BKSP
    &kp LCTL  &kp A       &kp S      &kp D      &kp F        &kp G    &kp H &kp J        &kp K      &kp L        &kp SEMI       &ht_tp RCTL QUOT
    &kp LSHFT &kp Z       &kp X      &kp C      &kp V        &kp B    &kp N &kp M        &kp CMMA   &kp DOT      &kp FSLH       &kp RSFT
-                         &kp LALT &ht_tp LGUI SPC &ht_tp LCTL ESC    &lt BETA GRAVE &ht_tp LSHFT ENTER &mo ALPHA
+                         &kp LALT &ht_tp LGUI SPC &ht_tp LCTL ESC    &lt ALPHA GRAVE &ht_tp LSHFT ENTER &mo BETA
                         >;
                 };
 
