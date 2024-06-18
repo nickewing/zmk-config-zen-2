@@ -48,7 +48,7 @@
    &kp TAB   &kp Q       &kp W      &kp E      &kp R        &kp T    &kp Y &kp U        &kp I      &kp O        &kp P          &kp BKSP
    &kp LCTL  &kp A       &kp S      &kp D      &kp F        &kp G    &kp H &kp J        &kp K      &kp L        &kp SEMI       &ht_tp RCTL QUOT
    &kp LSHFT &kp Z       &kp X      &kp C      &kp V        &kp B    &kp N &kp M        &kp CMMA   &kp DOT      &kp FSLH       &kp RSFT
-                         &kp LALT &ht_tp LGUI SPC &ht_tp LCTL ESC    &lt ALPHA GRAVE &ht_tp LSHFT ENTER &mo BETA
+                &ht_tp LALT MINUS &ht_tp LGUI SPC &ht_tp LCTL ESC    &lt ALPHA GRAVE &ht_tp LSHFT ENTER &mo BETA
                         >;
                 };
 
@@ -72,25 +72,13 @@
                         >;
                 };
 
-/*
                 alpha_layer {
                         label = "QWERTY";
                         bindings = <
-   &kp ESC   &kp EXCL     &kp AT      &kp PRCNT   &kp CARET   &kp DLLR   &kp PLUS &kp STAR       &kp LBRC      &kp RBRC      &kp PIPE        &kp DEL
-   &kp LCTL  &kp N1       &kp N2      &kp N3      &kp N4      &kp N5     &kp AMPS &kp EQUAL      &kp LBKT      &kp RBKT      &kp MINUS       &kp UNDER
-   &kp LSHFT &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp HASH &kp BSLH       &kp LPAR      &kp RPAR      &kp GRAVE       &kp TILDE
-                                             &trans &trans &trans     &trans &trans &trans
-                        >;
-                };
-*/
-
-                alpha_layer {
-                        label = "QWERTY";
-                        bindings = <
-   &kp GRAVE &kp EXCL     &kp AT      &kp HASH    &kp DLLR    &kp PRCNT  &kp CARET &kp AMPS  &kp STAR   &kp BSLH   &kp PIPE  &kp UNDER
-   &kp LCTL  &kp N1       &kp N2      &kp N3      &kp N4      &kp N5     &kp EQUAL &kp LBRC  &kp RBRC   &kp LBKT   &kp RBKT  &kp MINUS
-   &kp LSHFT &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp PLUS  &kp LPAR  &kp RPAR   &kp LT     &kp GT    &kp TILDE
-                                                &trans &trans &trans     &trans &trans &trans
+   &kp GRAVE &kp EXCL     &kp AT      &kp HASH    &kp DLLR    &kp PRCNT  &kp CARET &kp AMPS  &kp STAR   &kp LPAR   &kp RPAR  &kp PIPE
+   &kp LCTL  &kp N1       &kp N2      &kp N3      &kp N4      &kp N5     &kp LBKT  &kp RBKT  &kp LBRC   &kp RBRC   &kp COLON &kp DQT
+   &kp TILDE &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp PLUS  &kp EQUAL &kp LT     &kp GT     &kp QMARK &kp BLSH
+                                     &ht_tp LALT UNDER &trans &trans     &trans &trans &trans
                         >;
                 };
 
