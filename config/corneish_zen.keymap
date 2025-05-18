@@ -78,10 +78,10 @@
                 alpha_layer {
                         label = "QWERTY";
                         bindings = <
-   &kp    GRAV E      &kp EXCL     &kp AT      &kp HASH    &kp DLLR    &kp PRCNT  &kp CARET &kp AMPS  &kp STAR   &kp LPAR   &kp RPAR  &kp PIPE
-   &kp    LCTL        &kp N1       &kp N2      &kp N3      &kp N4      &kp N5     &kp LBKT  &kp RBKT  &kp LBRC   &kp RBRC   &kp COLON &ht_tp RCTL DQT
-   &ht_tp LSHFT TILDE &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp PLUS  &kp EQUAL &kp LT     &kp GT     &kp QMARK &ht_tp RSFT BSLH
-                                              &ht_tp LALT UNDER &trans &trans     &trans &trans &trans
+   &kp    GRAVE      &kp EXCL     &kp AT      &kp HASH    &kp DLLR    &kp PRCNT  &kp CARET &kp AMPS  &kp STAR   &kp LPAR   &kp RPAR  &kp PIPE
+   &kp    LCTL       &kp N1       &kp N2      &kp N3      &kp N4      &kp N5     &kp LBKT  &kp RBKT  &kp LBRC   &kp RBRC   &kp COLON &ht_tp RCTL DQT
+   &ht_tp LSHF TILDE &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp PLUS  &kp EQUAL &kp LT     &kp GT     &kp QMARK &ht_tp RSFT BSLH
+                                             &ht_tp LALT UNDER &trans &trans     &trans &trans &trans
                         >;
                 };
 
