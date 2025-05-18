@@ -50,7 +50,7 @@
                         bindings = <
    &kp TAB   &kp Q       &kp W      &kp E      &kp R        &kp T    &kp Y &kp U        &kp I      &kp O        &kp P          &kp BKSP
    &kp LCTL  &kp A       &kp S      &kp D      &kp F        &kp G    &kp H &kp J        &kp K      &kp L        &kp SEMI       &ht_tp RCTL QUOT
-   &kp LSHFT &kp Z       &kp X      &kp C      &kp V        &kp B    &kp N &kp M        &kp CMMA   &kp DOT      &kp FSLH       &ht_tp RSFT MINUS
+   &kp LSHFT &kp Z       &kp X      &kp C      &kp V        &kp B    &kp N &kp M        &kp CMMA   &kp DOT      &kp FSLH       &kp RSFT
                 &ht_tp LALT MINUS &ht_tp LGUI SPC &ht_tp LCTL ESC    &lt ALPHA GRAVE &ht_tp LSHFT ENTER &mo BETA
                         >;
                 };
@@ -78,10 +78,10 @@
                 alpha_layer {
                         label = "QWERTY";
                         bindings = <
-   &kp    GRAVE      &kp EXCL     &kp AT      &kp HASH    &kp DLLR    &kp PRCNT  &kp CARET &kp AMPS  &kp STAR   &kp LPAR   &kp RPAR  &kp PIPE
-   &kp    LCTL       &kp N1       &kp N2      &kp N3      &kp N4      &kp N5     &kp LBKT  &kp RBKT  &kp LBRC   &kp RBRC   &kp COLON &ht_tp RCTL DQT
-   &ht_tp LSHF TILDE &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp PLUS  &kp EQUAL &kp LT     &kp GT     &kp QMARK &ht_tp RSFT BSLH
-                                             &ht_tp LALT UNDER &trans &trans     &trans &trans &trans
+   &kp GRAVE &kp EXCL     &kp AT      &kp HASH    &kp DLLR    &kp PRCNT  &kp CARET &kp AMPS  &kp STAR   &kp LPAR   &kp RPAR  &kp PIPE
+   &kp LCTL  &kp N1       &kp N2      &kp N3      &kp N4      &kp N5     &kp LBKT  &kp RBKT  &kp LBRC   &kp RBRC   &kp COLON &kp DQT
+   &kp TILDE &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp PLUS  &kp EQUAL &kp LT     &kp GT     &kp QMARK &kp BSLH
+                                     &ht_tp LALT UNDER &trans &trans     &trans &trans &trans
                         >;
                 };
 
